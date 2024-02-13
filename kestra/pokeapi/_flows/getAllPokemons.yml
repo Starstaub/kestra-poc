@@ -1,5 +1,5 @@
 id: get-all-pokemons
-namespace: test.pokeapi
+namespace: pokeapi
 tasks:
   - id: python1
     type: io.kestra.plugin.scripts.python.Script
