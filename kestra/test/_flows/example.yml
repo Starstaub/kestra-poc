@@ -1,6 +1,6 @@
 id: example
 namespace: test
 tasks:
-  - id: hello_world
-    type: io.kestra.core.tasks.log.Log
-    message: Hello World!
+  - id: hello
+    type: io.kestra.plugin.scripts.python.Script
+    script: "{{ read('scripts/hello.py') }}"
